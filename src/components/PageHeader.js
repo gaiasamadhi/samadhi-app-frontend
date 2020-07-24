@@ -7,13 +7,13 @@ const PageHeader = (props) => {
 
   return (
   <div className='page-header'>
-          <div class="d-flex justify-content-around bg-info h3">
-            <div class="p-3 bd-highlight">
+          <div className="d-flex justify-content-around bg-info h3 mb-0">
+            <div className="p-3 bd-highlight">
               <span>Samadhi </span>
               <img src={logo} width="30" height="30" class="" alt="" loading="lazy"/>
             </div>
-            <span class="p-3 bd-highlight">{title}</span>
-            <span class="p-3 bd-highlight">EN</span>
+            <span className="p-3 bd-highlight">{title}</span>
+            <span className="p-3 bd-highlight">EN</span>
           </div>
   </div>
   )
