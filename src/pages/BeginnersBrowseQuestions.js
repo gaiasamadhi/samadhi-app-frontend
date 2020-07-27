@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
 import MediaPlayer from '../components/MediaPlayer';
 import ModuleTabs from '../components/ModuleTabs';
-import BrowseQuestions from '../components/BrowseQuestions';
+import BrowseQuestionsContainer from '../containers/BrowseQuestionsContainer';
 
 const BeginnersBrowseQuestions = () => {
   const params =useParams();
@@ -17,7 +17,7 @@ const BeginnersBrowseQuestions = () => {
       <ModuleTabs
       courseContent={''}
       questionsAndAnswers={'active'}/>
-      <BrowseQuestions/>
+    <BrowseQuestionsContainer/>
     </div>
   )
 };
