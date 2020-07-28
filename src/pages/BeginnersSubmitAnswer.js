@@ -2,7 +2,7 @@ import React from 'react';
 import PageHeader from '../components/PageHeader';
 import MediaPlayer from '../components/MediaPlayer';
 import ModuleTabs from '../components/ModuleTabs';
-import SubmitAnswer from '../components/SubmitAnswer';
+import SubmitAnswerContainer from '../containers/SubmitAnswerContainer';
 
 const BeginnersSubmitAnswer = () => {
   return (
@@ -14,7 +14,7 @@ const BeginnersSubmitAnswer = () => {
       <ModuleTabs
       courseContent={''}
       questionsAndAnswers={'active'}/>
-      <SubmitAnswer/>
+    <SubmitAnswerContainer/>
     </div>
   )
 }
