@@ -12,7 +12,7 @@ const ModuleTabs = (props) => {
           <a className= {"nav-link " + courseContent}  href=""><Link className="text-dark" to="/beginners-course-content">course content</Link></a>
         </li>
         <li className="nav-item">
-          <a className= {"nav-link " + questionsAndAnswers} href=""><Link className="text-dark" to={match.url + "/browse-questions"}>questions and answers</Link></a>
+          <a className= {"nav-link " + questionsAndAnswers} href=""><Link className="text-dark" to={"/beginners-course-content/browse-questions"}>questions and answers</Link></a>
         </li>
       </ul>
       {console.log(match.url - "/browse")}
