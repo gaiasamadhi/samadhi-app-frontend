@@ -17,8 +17,8 @@ function App() {
         <Route exact path='/'><HomePage/></Route>
         <Route path='/level-selection'><LevelSelection/></Route>
         <Route path='/beginners-course-info' ><BeginnersCourseInfo/></Route>
-        <Route path='/beginners-course-content/:b/:s'><BeginnersSubmitAnswer/></Route>
-        <Route path='/beginners-course-content/:b'><BeginnersBrowseQuestions/></Route>
+        <Route path='/beginners-course-content/:browse/:id'><BeginnersSubmitAnswer/></Route>
+        <Route path='/beginners-course-content/:browse'><BeginnersBrowseQuestions/></Route>
 
         <Route path='/beginners-course-content'><BeginnersCourseContent/></Route>
       </Switch>
