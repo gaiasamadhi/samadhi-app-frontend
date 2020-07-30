@@ -25,10 +25,10 @@ const BrowseQuestionsContainer = () => {
                 .then(response => response.json())
                 .then(data => {
                     setListQuestions(data);
-                    const array = data.map((filteredQuestion) => (filteredQuestion.description))
+                    //const array = data.map((filteredQuestion) => (filteredQuestion.description))
                     //const searchQuery = array.map((field) =>field.search(/newQuestionValue/i))
 
-                    updateQuestions(array);
+                    updateQuestions(data);
                     updateNewQuestionValue("");
                     setFetchStatus('SUCCEED');
 
