@@ -35,9 +35,10 @@ const BrowseQuestions = (props) => {
                 <button className="btn btn-outline-success my-2 my-sm-0"  onClick = {onSearchQuestionClickHandler}>Search</button>
               </div>
             </nav>
+            
             {questions.map((filteredQuery, idx) => (
               <ul className="list-group">
-                <li className="list-group-item" key={idx}><Link className="text-dark" to={"/beginners-course-content/browse-questions/" + idx}>{filteredQuery}</Link></li>
+                <li className="list-group-item" key={idx}><Link className="text-dark" to={"/beginners-course-content/browse-questions/" + filteredQuery._id}>{filteredQuery.description}</Link></li>
               </ul>))
             }
 
