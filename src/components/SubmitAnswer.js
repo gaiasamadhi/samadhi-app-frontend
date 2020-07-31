@@ -22,7 +22,7 @@ const SubmitAnswer = (props) => {
         <div className="row justify-content-center">
           <div className="col-3 offset-0 my-5">
             <div className="card border-info mb-3" style={{maxWidth: "18rem"}}>
-              <div className="card-header">{questionDescription.description}</div>
+              <div className="card-header">{questionDescription.title}</div>
               <div className="card-body text-info">
                 {questionDescription.answers && questionDescription.answers.map(text => <h5 className="card-title">{text.answer}</h5>)}
                 {/*<h5 className="card-title">{answersList}</h5>*/}

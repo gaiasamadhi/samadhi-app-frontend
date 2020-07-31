@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
+import {Link, useRouteMatch} from 'react-router-dom';
 import ModuleTabs from './ModuleTabs';
 
 
 const BrowseQuestions = (props) => {
+  const {url} =useRouteMatch()
   const {questions,
     newQuestionValue,
     newQuestionValueOnChangeHandler,
@@ -16,7 +17,7 @@ const BrowseQuestions = (props) => {
       <div className="container-fluid bg-info">
         <div className="row justify-content-center">
           <div className="col-3 offset-0 my-5">
-            <button type="button" className="btn btn-primary btn-lg" ><Link className="text-white" to="/">Ask a question</Link></button>
+            <button type="button" className="btn btn-primary btn-lg" ><Link className="text-white" to={`${url}/ask`}>Ask a question</Link></button>
           </div>
         </div>
 
@@ -35,10 +36,10 @@ const BrowseQuestions = (props) => {
                 <button className="btn btn-outline-success my-2 my-sm-0"  onClick = {onSearchQuestionClickHandler}>Search</button>
               </div>
             </nav>
-            
+
             {questions.map((filteredQuery, idx) => (
               <ul className="list-group">
-                <li className="list-group-item" key={idx}><Link className="text-dark" to={"/beginners-course-content/browse-questions/" + filteredQuery._id}>{filteredQuery.description}</Link></li>
+                <li className="list-group-item" key={idx}><Link className="text-dark" to={"/beginners-course-content/browse-questions/" + filteredQuery._id}>{filteredQuery.title}</Link></li>
               </ul>))
             }
 

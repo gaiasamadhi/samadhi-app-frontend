@@ -21,7 +21,7 @@ const BrowseQuestionsContainer = () => {
   const onSearchQuestionClickHandler = () => {
         setFetchStatus('STARTED')
 
-        fetch(`http://localhost:1337/questions/?description_contains=${newQuestionValue}`)
+        fetch(`http://localhost:1337/questions/?title_contains=${newQuestionValue}`)
                 .then(response => response.json())
                 .then(data => {
                     setListQuestions(data);
