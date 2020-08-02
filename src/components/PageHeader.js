@@ -7,7 +7,8 @@ const PageHeader = (props) => {
 
   console.log(imageList[0] && imageList[0]["images"].map(text=>text.name))
   const newLogo = imageList[0] && imageList[0]["images"].map(text=>text.url)
-
+  const headerBackground = imageList[0] && imageList[0]["images"].map(text=>text.url)
+  
   return (
   <div className='page-header'>
           <div className="d-flex justify-content-around h3 mb-0">
