@@ -13,21 +13,23 @@ const PostQuestion = (props) => {
     <div className="container-fluid bg-info">
       <div className="row justify-content-center">
         <div className="col-3 offset-0 my-5">
-          <p className="text-center h4">Title</p>
-          <textarea
+          <p className="text-center h4 text-white">Title</p>
+          <textarea className ="w-100"
+            placeholder ="please enter the title here"
             value={newTitle}
             onChange={newTitleValueOnChangeHandler}>
           </textarea>
-          <p className="text-center h4">Description (optional)</p>
-          <textarea
+          <p className="text-center h4 my-3 text-white">Description (optional)</p>
+          <textarea className ="w-100"
+            placeholder ="please enter the description here"
             value={newDescription}
             onChange={newDescriptionValueOnChangeHandler}>
           </textarea>
-          <div>
-            <button onClick={onPostYourAnswerClickHandler}>
+          <div className = "my-5">
+            <button type="button" className="btn btn-primary btn-lg" onClick={onPostYourAnswerClickHandler}>
                   Post your question
             </button>
-        </div>
+          </div>
 
         </div>
       </div>

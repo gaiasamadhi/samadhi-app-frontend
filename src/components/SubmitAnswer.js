@@ -20,29 +20,36 @@ const SubmitAnswer = (props) => {
     <div className="submit-answer">
       <div className="container-fluid bg-info">
         <div className="row justify-content-center">
-          <div className="col-3 offset-0 my-5">
-            <div className="card border-info mb-3" style={{maxWidth: "18rem"}}>
-              <div className="card-header">{questionDescription.title}</div>
+          <div className="col-6 offset-0 my-5">
+            <div className="card border-info mb-3" >
+              <div className="card-header h4 text-info">
+                {questionDescription.title}
+              </div>
+              <ul class="list-group list-group-flush">
+              {questionDescription.answers && questionDescription.answers.map(text => <li class="list-group-item">{text.answer}</li>)}
+              </ul>
               <div className="card-body text-info">
-                {questionDescription.answers && questionDescription.answers.map(text => <h5 className="card-title">{text.answer}</h5>)}
+                {/*questionDescription.answers && questionDescription.answers.map(text => <h5 className="card-title">{text.answer}</h5>)*/}
                 {/*<h5 className="card-title">{answersList}</h5>*/}
               </div>
             </div>
             {/*JSON.stringify(answers)*/}
             {/*questionDescription.answers || questionDescription.answers[0].answer*/}
-            <textarea
+            <textarea className ="w-100"
+              placeholder ="write your answer here"
               value={newAnswerValue}
               onChange={newAnswerValueOnChangeHandler}>
             </textarea>
-              <div>
-                <button onClick={onPostYourAnswerClickHandler}>
+              <div className = "my-5">
+                <button type="button" className="btn btn-primary btn-lg" onClick={onPostYourAnswerClickHandler}>
                       Post your answer
                 </button>
             </div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
+
   )
 }
 
