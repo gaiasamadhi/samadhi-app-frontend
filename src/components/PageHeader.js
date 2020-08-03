@@ -3,21 +3,28 @@ import PropTypes from 'prop-types';
 import logo from '../assets/github_icon.png'
 
 const PageHeader = (props) => {
-  const {title, imageList} = props;
+  const {title, imageList,backGroundImage} = props;
 
-  console.log(imageList[0] && imageList[0]["images"].map(text=>text.name))
-  const newLogo = imageList[0] && imageList[0]["images"].map(text=>text.url)
-  const headerBackground = imageList[0] && imageList[0]["images"].map(text=>text.url)
-  
+  //console.log(imageList.map(text => text.image.find(element => element.name ==="example.png")))
+  //const newLogo = imageList[0] && imageList[0]["image"].map(text=>text.name === "example.png")
+  //const headerBackground = imageList[0] && imageList[0]["image"].map(text=>text.url)
+  const officialLogo = "https://res.cloudinary.com/dr33x9zki/image/upload/v1596447437/lotus_11a4244c92.png"
   return (
   <div className='page-header'>
-          <div className="d-flex justify-content-around h3 mb-0">
-            <div className="p-3 bd-highlight">
-              <span>Samadhi </span>
-              <img src={newLogo} width="30" height="30" className="" alt="" loading="lazy"/>
+          <div className="container-fluid bg-info"> {/* style = {{backgroundImage: `url(${backGroundImage})`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: "50px"}}>*/}
+            {/*<div className="d-flex justify-content-around h3 mb-0">*/}
+            <div className="row justify-content-around h3 my-0 py-2 text-white">
+              <div className="bd-highlight">
+                <span>Samadhi </span>
+                <img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/>
+              </div>
+              <span className="bd-highlight">{title}</span>
+              <span className="bd-highlight">EN</span>
             </div>
-            <span className="p-3 bd-highlight">{title}</span>
-            <span className="p-3 bd-highlight">EN</span>
           </div>
   </div>
   )
