@@ -4,12 +4,12 @@ import {Link} from 'react-router-dom';
 import logo from '../assets/github_icon.png'
 
 const HomeContent = (props) => {
-  const {banner, description, backGroundImage} = props;
+  const {banner, description, backgroundImage} = props;
 
   return (
     <div className='home-content'>
       <div className= "container-fluid"
-        style = {{backgroundImage: `url(${backGroundImage})`,
+        style = {{backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
