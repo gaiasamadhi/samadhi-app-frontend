@@ -8,8 +8,10 @@ const BeginnersCourseTabsWithCourseContent = () => {
       <ModuleTabs
       courseContent={'active'}
       questionsAndAnswers={''}/>
-    <BeginnersCourseInfoCourseContent/>
-
+      <BeginnersCourseInfoCourseContent
+        justifyContent = {"center"}
+        offsetLevel = {0}
+        />
     </div>
   )
 }
