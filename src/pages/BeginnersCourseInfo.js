@@ -15,10 +15,14 @@ const BeginnersCourseInfo = () => {
         monthOfUpdate = {7}
         yearOfUpdate ={2020}
         suitableFor ={'Everyone'}
+        backgroundImage = {"https://res.cloudinary.com/dr33x9zki/image/upload/v1596458186/lotus_Background_679344e864.jpg"}
         />
       <BeginnersCourseInfoGoals
         banner={'In this course you will learn:'}/>
-      <BeginnersCourseInfoCourseContent/>
+      <BeginnersCourseInfoCourseContent
+        justifyContent = {"start"}
+        offsetLevel = {1}
+        />
     </div>
 
   )
