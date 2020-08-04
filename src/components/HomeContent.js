@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import logo from '../assets/github_icon.png'
+
 
 const HomeContent = (props) => {
   const {banner, description, backgroundImage} = props;

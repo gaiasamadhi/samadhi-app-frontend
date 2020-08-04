@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from '../assets/github_icon.png'
+
 
 const PageHeader = (props) => {
   const {title, imageList,backGroundImage} = props;

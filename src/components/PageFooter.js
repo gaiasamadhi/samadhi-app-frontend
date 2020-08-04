@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from '../assets/github_icon.png'
+
 
 const PageFooter = (props) => {
   const {footer} =props;
