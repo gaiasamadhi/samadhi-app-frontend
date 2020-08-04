@@ -21,7 +21,7 @@ const BrowseQuestionsContainer = () => {
   const onSearchQuestionClickHandler = () => {
         setFetchStatus('STARTED')
 
-        fetch(`http://localhost:1337/questions/?title_contains=${newQuestionValue}`) //https://samadhi-app-backend.herokuapp.com
+        fetch(`https://samadhi-app-backend.herokuapp.com/questions/?title_contains=${newQuestionValue}`) //https://samadhi-app-backend.herokuapp.com
                 .then(response => response.json())
                 .then(data => {
                     setListQuestions(data);

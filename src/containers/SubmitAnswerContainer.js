@@ -22,7 +22,7 @@ const SubmitAnswerContainer = () => {
         useEffect (() => {
           setFetchStatus('STARTED')
 
-          fetch(`http://localhost:1337/questions/${id}`) //https://samadhi-app-backend.herokuapp.com
+          fetch(`https://samadhi-app-backend.herokuapp.com/questions/${id}`) //https://samadhi-app-backend.herokuapp.com
                   .then(response => response.json())
                   .then(data => {
                       setQuestion(data);
@@ -42,7 +42,7 @@ const SubmitAnswerContainer = () => {
 
   const onPostYourAnswerClickHandler = () => {
 
-      fetch("http://localhost:1337/answers", {
+      fetch("https://samadhi-app-backend.herokuapp.com/answers", {
         method: "POST",
         header: {
           "Content-Type": "application/json"

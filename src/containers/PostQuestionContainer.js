@@ -17,7 +17,7 @@ const PostQuestionContainer = () => {
 
   const onPostYourAnswerClickHandler = () => {
 
-    fetch("http://localhost:1337/questions", {
+    fetch("https://samadhi-app-backend.herokuapp.com/questions", {
       method: "POST",
       header: {
         "Content-Type": "application/json"
