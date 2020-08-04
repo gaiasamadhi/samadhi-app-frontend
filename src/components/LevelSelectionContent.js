@@ -6,7 +6,7 @@ const LevelSelectionContent = (props) => {
   const {banner, description,backgroundImage} = props;
 
   return(
-    <div className="container-fluid text-white" style = {{height: "", backgroundColor: "#0E82CF", opacity: "1"}} > {/*#5b56bc*/}
+    <div className="container-fluid text-dark bg-light" style = {{height: "", backgroundColor: "#0E82CF", opacity: "1"}} > {/*#5b56bc*/}
         <div className="row justify-content-center"
           style = {{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(50,50,50,0.5) 100%), url(${backgroundImage})`,
           backgroundPosition: "center",
@@ -32,7 +32,7 @@ const LevelSelectionContent = (props) => {
                 <span className="h4 my-3">beginner</span>
               </div>
               <div className="row justify-content-center">
-                <span className="col-sm mx-5 my-3">{description}</span>
+                <span className="col-sm mx-5 my-5">{description}</span>
               </div>
             </div>
             {/*<button type="button" className="btn btn-info my-5 " ><Link className="text-white" to="beginners-course-info">Get started</Link></button>*/}
@@ -47,7 +47,7 @@ const LevelSelectionContent = (props) => {
                 <span className="h4 my-3">intermediate</span>
               </div>
               <div className="row justify-content-center">
-                <span className="col-sm mx-5 my-3">{description}</span>
+                <span className="col-sm mx-5 my-5">{description}</span>
               </div>
             </div>
             <div className="row justify-content-center">
@@ -61,7 +61,7 @@ const LevelSelectionContent = (props) => {
                 <span className="h4 my-3">advanced</span>
               </div>
               <div className="row justify-content-center">
-                <span className="col-sm mx-5 my-3">{description}</span>
+                <span className="col-sm mx-5 my-5">{description}</span>
               </div>
             </div>
             <div className="row justify-content-center">
