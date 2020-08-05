@@ -27,7 +27,7 @@ const HomeContent = (props) => {
           </div>
         </div>
         <div className="row justify-content-start" style={{marginLeft: "130px"}}>
-          <a class="btn btn-info my-5 btn-lg" href="/level-selection" role="button">Get started</a>
+          <Link class="btn btn-info my-5 btn-lg" to="/level-selection" role="button">Get started</Link>
           {/*<button type="button" className="btn btn-info my-5 btn-lg" style={{marginLeft: "95px", marginTop:"5px", marginBottom:"5px"}}><Link className="text-white" to="/level-selection">Get started</Link></button>*/}
         </div>
       </div>

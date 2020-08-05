@@ -6,7 +6,7 @@ import BeginnersCourseContent from './pages/BeginnersCourseContent';
 import BeginnersBrowseQuestions from './pages/BeginnersBrowseQuestions';
 import BeginnersSubmitAnswer from './pages/BeginnersSubmitAnswer';
 import BeginnersPostQuestion from './pages/BeginnersPostQuestion';
-import {BrowserRouter as Router, Switch, Route, useRouteMatch} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route, useRouteMatch} from 'react-router-dom';
 
 import './App.css';
 
