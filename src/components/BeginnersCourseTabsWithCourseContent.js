@@ -6,8 +6,8 @@ const BeginnersCourseTabsWithCourseContent = () => {
   return (
     <div className ="beginners-course-tabs-with-course-content">
       <ModuleTabs
-      courseContent={'active'}
-      questionsAndAnswers={''}/>
+      courseContent={'active text-info h5'}
+      questionsAndAnswers={'text-dark'}/>
       <BeginnersCourseInfoCourseContent
         justifyContent = {"center"}
         offsetLevel = {0}

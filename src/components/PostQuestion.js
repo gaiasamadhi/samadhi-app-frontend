@@ -26,7 +26,7 @@ const PostQuestion = (props) => {
             onChange={newDescriptionValueOnChangeHandler}>
           </textarea>
           <div className = "my-5">
-            <button type="button" className="btn btn-primary btn-lg" onClick={onPostYourAnswerClickHandler}>
+            <button type="button" className="btn btn-primary btn-lg bg-white text-dark border-0 font-weight-bold" onClick={onPostYourAnswerClickHandler}>
                   Post your question
             </button>
           </div>

@@ -5,7 +5,7 @@ const MediaPlayer = () => {
     <div className="media-player">
       <div className ="container-fluid bg-light" style = {{backgroundColor: "#5b56bc", opacity: "1"}}>
         <div className ="row justify-content-center py-3">
-          <div className ="col-6 my-3 text-info">
+          <div className ="col-6 my-3 text-dark">
             <div className ="row h5 justify-content-center">
             Welcome :-)
             </div>

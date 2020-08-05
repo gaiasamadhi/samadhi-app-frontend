@@ -10,7 +10,7 @@ const BeginnersCourseInfo = () => {
       <PageHeader/>
       <BeginnersCourseInfoIntroduction
         banner= {'Meditation for beginners: a practical guide'}
-        description={'This course will teach you the fundamentals of meditation'}
+        description={'This course will teach you the fundamentals of meditation.'}
         dayOfUpdate ={25}
         monthOfUpdate = {7}
         yearOfUpdate ={2020}

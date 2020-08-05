@@ -18,8 +18,8 @@ const BeginnersPostQuestion = () => {
           />
           <MediaPlayer/>
           <ModuleTabs
-          courseContent={''}
-          questionsAndAnswers={'active'}/>
+          courseContent={'text-dark'}
+          questionsAndAnswers={'active text-info h5'}/>
         <PostQuestionContainer/>
         </div>
       //</Route>
