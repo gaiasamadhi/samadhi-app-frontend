@@ -13,7 +13,7 @@ const HomePage = () => {
         /> {/*//https://res.cloudinary.com/dr33x9zki/image/upload/v1596386454/world_map_header_72c3d6f79d.png*/}
         <HomeContent
           banner={'Meditation for everyone'}
-          description={'Less Stress and better Life'}
+          description={' Less stress and better life '}
           backgroundImage = {"https://res.cloudinary.com/dr33x9zki/image/upload/v1596458186/lotus_Background_679344e864.jpg"}
           />{/*https://res.cloudinary.com/dr33x9zki/image/upload/v1596396986/Home_Content_Background_00_d5bdb382dd.jpg */}
         <PageFooter footer={'GNU General Public License version 2'}

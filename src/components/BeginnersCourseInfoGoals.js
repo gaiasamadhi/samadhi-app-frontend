@@ -7,8 +7,8 @@ const BeginnersCourseInfoGoals = (props) => {
   return (
     <div className="beginners-course-info-goals">
       <div className="container-fluid text-white" style ={{backgroundColor: "#0ECFB4"}}>
-        <div className="row justify-content-center">
-          <div className="col-10 h4 my-5">
+        <div className="row justify-content-start">
+          <div className="col-0 h4 my-5 offset-1">
             {banner}
           </div>
         </div>

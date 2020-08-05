@@ -27,7 +27,7 @@ const LevelSelectionContent = (props) => {
         <div className="row justify-content-around mx-4">
 
           <div className="col-sm">
-            <div className="bg" style ={{backgroundColor: "#0ECFB4"}}>
+            <div className="" style ={{backgroundColor: "#0ECFB4" , boxShadow: "8px 8px 6px 0 rgba(0,0,0,0.160784)"}}>
               <div className="row justify-content-center">
                 <span className="h4 my-3">beginner</span>
               </div>
@@ -42,7 +42,7 @@ const LevelSelectionContent = (props) => {
           </div>
 
           <div className="col-sm">
-            <div className="bg-info">
+            <div className="bg-info" style ={{boxShadow: "8px 8px 6px 0 rgba(0,0,0,0.160784)"}}>
               <div className="row justify-content-center">
                 <span className="h4 my-3">intermediate</span>
               </div>
@@ -56,7 +56,7 @@ const LevelSelectionContent = (props) => {
           </div>
 
           <div className="col-sm">
-            <div className="bg-info">
+            <div className="bg-info" style ={{boxShadow: "8px 8px 6px 0 rgba(0,0,0,0.160784)"}}>
               <div className="row justify-content-center">
                 <span className="h4 my-3">advanced</span>
               </div>

@@ -42,10 +42,10 @@
   border-radius: 50%;
 }
 .sound-picker button:nth-child(1) {
-  background: #4972a1;
+  background: #17A2B8;
 }
 .sound-picker button:nth-child(2) {
-  background: #a14f49;
+  background: #B85E16;
 }
 .sound-picker button img {
   height: 100%;
@@ -66,17 +66,16 @@
   flex: 1;
 }
 
-.player-container svg {
-  position: absolute;
-  height: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  pointer-events: none;
+.player-container button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+  /*background: #4972a1*/
 }
-.player-container svg circle {
-  transition: all 0.2s ease-in-out;
-}
+
+
 .time-display {
   color: white;
   position: absolute;

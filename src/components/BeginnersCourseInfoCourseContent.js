@@ -12,7 +12,7 @@ const BeginnersCourseInfoCourseContent = (props) => {
             <table className ="table table-bordered bg-light text-info table-hover">
               <thead>
                 <tr>
-                  <th colspan="2" className="px-5">
+                  <th colspan="2" className="px-1">
                     Course content
                   </th>
                 </tr>

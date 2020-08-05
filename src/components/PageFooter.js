@@ -8,7 +8,7 @@ const PageFooter = (props) => {
 
   return (
     <div className='page-footer'>
-      <div className="container-fluid bg-info">
+      <div className="container-fluid " style={{backgroundColor: "#8d91da"}}>
         <div className="row justify-content-around h4 my-0 py-2 text-white">
           <div className="p-3 bd-highlight">
             <span>Samadhi </span>
