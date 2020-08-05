@@ -23,7 +23,7 @@ const BeginnersCourseInfoIntroduction = (props) => {
             {description}
           </div>
           <div className="fixed-top offset-8 my-0">
-            <a className="btn btn-info btn-lg btn-block" href="/beginners-course-content" role="button" style={{marginTop: '200px'}}>Go to course</a>
+            <Link className="btn btn-info btn-lg btn-block" to="/beginners-course-content" role="button" style={{marginTop: '200px'}}>Go to course</Link>
           </div>
         </div>
         <div className='row '>

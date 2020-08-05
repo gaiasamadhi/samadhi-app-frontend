@@ -9,10 +9,10 @@ const ModuleTabs = (props) => {
     <div className="module-tabs">
       <ul className="nav nav-pills nav-fill">
         <li className="nav-item">
-          <a className= {"nav-link " + courseContent}  href="/beginners-course-content">Course content</a>
+          <Link className= {"nav-link " + courseContent}  to="/beginners-course-content">Course content</Link>
         </li>
         <li className="nav-item">
-          <a className= {"nav-link " + questionsAndAnswers} href="/beginners-course-content/browse-questions">Questions and answers</a>
+          <Link className= {"nav-link " + questionsAndAnswers} to="/beginners-course-content/browse-questions">Questions and answers</Link>
         </li>
       </ul>
       {console.log(match.url - "/browse")}
