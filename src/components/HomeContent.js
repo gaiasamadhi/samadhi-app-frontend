@@ -23,14 +23,14 @@ const HomeContent = (props) => {
           <div className="col h3 text-white offset-1" >
             {/*<img src={officialLogo} width="15" height="15" className="" alt="" loading="lazy"/>*/}
             <span className="">{description}</span>
-            
+
           </div>
           <div className="col-2 ml-auto">
             {/*<img src={logo} width="30" height="30" alt="" loading="lazy" style={{marginRight: "px"}}/>*/}
           </div>
         </div>
         <div className="row justify-content-start ml-5" >
-          <Link className="btn my-4 text-white btn-lg font-weight-bold offset-1" to="/level-selection" role="button" style ={{width: "300px", backgroundColor : "#8069c3", border: ""}}>GET STARTED</Link>
+          <Link className="btn my-4 text-white btn-lg font-weight-bold offset-1 bg bg-info" to="/level-selection" role="button" style ={{width: "300px", backgroundColor : "#ffb554", border: ""}} >GET STARTED</Link> {/*#8069c3*/}
           {/*<button type="button" className="btn btn-info my-5 btn-lg" style={{marginLeft: "95px", marginTop:"5px", marginBottom:"5px"}}><Link className="text-white" to="/level-selection">Get started</Link></button>*/}
         </div>
       </div>

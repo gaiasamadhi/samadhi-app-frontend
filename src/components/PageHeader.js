@@ -17,7 +17,7 @@ const PageHeader = (props) => {
           backgroundSize: "cover",
           height: "50px"}}>*/}
             {/*<div className="d-flex justify-content-around h3 mb-0">*/}
-            <div className="row justify-content-around h3 my-0 py-2 text-white offset-0">
+            <div className="row justify-content-around h3 my-0 py-2 text-white offset-0 " style={{backgroundColor:"#8d91da"}}>
               <div className="bd-highlight">
                 <span>Samadhi </span>
                 <img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/>
