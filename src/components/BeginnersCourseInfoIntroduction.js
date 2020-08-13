@@ -27,13 +27,13 @@ const BeginnersCourseInfoIntroduction = (props) => {
             <Link className="btn btn-info btn-lg btn-block" to="/beginners-course-content" role="button" style={{marginTop: '200px'}}>Go to course</Link>
           </div>
         </div>
-        <div className='row justify-content-start'>
-          <div className="col-2 offset-1 mt-3 pl-5 mb-5" style = {{marginLeft:"11.33%"}}>
-            <small>Last Update: {dayOfUpdate} {monthOfUpdate} {yearOfUpdate}</small>
+        <div className='row justify-content-start' >
+          <div className="col-2 offset-0 pl-5  mt-3 mb-5" style = {{marginLeft:"11.00%"}}>
+            <small>Last Update: {dayOfUpdate}-{monthOfUpdate}-{yearOfUpdate}</small>
           {/*  <br/>
           <small><em>{dayOfUpdate} {monthOfUpdate} {yearOfUpdate}</em></small>*/}
           </div>
-          <div className="col-2 mt-3 mb-5">
+          <div className="col-2 px-5 mt-3 mb-5 " style = {{marginLeft:""}}>
           <small> Suitable for: {suitableFor}</small>
           {/*<br/>
             <small><em>{suitableFor}</em></small>*/}
