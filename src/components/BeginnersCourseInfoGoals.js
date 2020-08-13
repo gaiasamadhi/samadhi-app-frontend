@@ -17,17 +17,17 @@ const BeginnersCourseInfoGoals = (props) => {
           <div className="row ">
             <ul className =" list-group col-3 offset-1 mb-5 text-dark ">
               <li className="list-group-item list-group-item border-0"><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Increase focus</li>
-              <li className="list-group-item list-group-item border-0 "><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Achieve deeper sense of relaxation
+              <li className="list-group-item list-group-item border-0 "><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Achieve a deeper sense of relaxation
               </li>
               <li className="list-group-item list-group-item border-0"><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Get in balance with the environment
               </li>
             </ul>
             <ul className ="list-group col-3 offset-0 mb-5">
-              <li className="list-group-item list-group-item border-0"><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Improves self-esteem
+              <li className="list-group-item list-group-item border-0"><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Reduces ego
               </li>
               <li className="list-group-item list-group-item border-0"><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Decrease undesired emotions
               </li>
-              <li className="list-group-item list-group-item border-0"><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Promotes feelings of joy
+              <li className="list-group-item list-group-item border-0"><img src={officialLogo} width="30" height="30" className="" alt="" loading="lazy"/> Improves self-esteem
               </li>
             </ul>
           </div>
