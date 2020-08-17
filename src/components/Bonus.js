@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef, createRef} from 'react';
-import './Bonus.css';
+//import './Bonus.css';
 import playButton from '../assets/svg/playButton.svg';// Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 import pauseButton from '../assets/svg/pauseButton.svg';//Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 import rainLogo from '../assets/svg/rainLogo.svg'; //<div>Icons made by <a href="https://www.flaticon.com/free-icon/rain_2948216?term=rainy&page=1&position=3" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -118,37 +118,44 @@ const Bonus = () => {
 
   return (
 
-      <div className="app" >{/*app*/}
-            {/*<div className="">row justify-content-around my-5*/}
-            <div className="vid-container" >
-              <video loop ref ={videoElement} key ={media} style = {style}>
-                <source src={`${media}`}  type="video/mp4"/>
-              </video>
-              <audio ref={audioElement} key={mood}>
-                {/* <source src="melody.ogg" type="audio/ogg" /> */}
-                <source src={`${mood}`} type="audio/mpeg" />
-              </audio>
+      <div className="bonus">{/*bonus-container*/}
+        <div className="container-fluid">
+            <video className="" loop ref ={videoElement} key ={media} style = {{position: "absolute",
+              zIndex: "0",
+              top: "0",
+              width:"100%",
+              height:"100%",
+              objectFit: "cover",
+              opacity:"1"}}>
+              <source src={`${media}`}  type="video/mp4"/>
+            </video>
+            <audio ref={audioElement} key={mood}>
+              {/* <source src="melody.ogg" type="audio/ogg" /> */}
+              <source src={`${mood}`} type="audio/mpeg" />
+            </audio>
+          <div className="row justify-content-around">
+            <div className="col offset-1">
+                <button className="btn btn-lg btn-outline-light my-5 py-3" onClick={setTimer(5)}>5 Minutes</button>
+                <br/>
+                <button className="btn btn-lg btn-outline-light my-5 py-3" onClick={setTimer(10)}>10 Minutes</button>
+                <br/>
+                <button className="btn btn-lg btn-outline-light my-5 py-3" onClick={setTimer(15)}>15 Minutes</button>
             </div>
-            <div className="time-select">
-                <button  onClick={setTimer(5)}>5 Minutes</button>
-                <button  onClick={setTimer(10)}>10 Minutes</button>
-                <button  onClick={setTimer(15)}>15 Minutes</button>
-            </div>
-            <div className="player-container">
+            <div className="col offset-1" style={{height:"120px"}}>
                   {/*<audio className="song"/>
                       <source src={soundRain} />
                   </audio>*/}
-                  <button onClick={toggle}>{playing ? <img src={pauseButton} alt=""></img> : <img src={playButton} alt=""></img>}</button>
-
-
-
-                  <h3 className="time-display">{mm}:{ss}</h3>
+                  <button className="btn btn-outline-light h-100 my-5 rounded-circle" onClick={toggle}>{playing ? <img className=" h-100 rounded-circle" src={pauseButton} alt=""></img> : <img className=" h-100 rounded-circle" src={playButton} alt=""></img>}</button>
+                  <h3 className="text-white my-5">{mm}:{ss}</h3>
             </div>
-            <div className="sound-picker">
-              <button data-sound={soundRain} data-video={videoRain} onClick={onClickRain}><img src={rainLogo} alt=""></img></button>
-              <button data-sound={soundBeach} data-video={videoBeach} onClick={onClickBeach}><img src={sunnyLogo} alt=""></img></button>
+            <div className="col offset-1" style={{height:"120px"}} >
+              <button className="btn btn-outline-light h-100 my-5 rounded-circle" onClick={onClickRain}><img className=" h-100 rounded-circle" src={rainLogo} alt=""></img></button>
+              <br/>
+              <button className="btn btn-outline-light h-100 my-5 rounded-circle" onClick={onClickBeach}><img className=" h-100 rounded-circle" src={sunnyLogo} alt=""></img></button>
             </div>
           </div>
+        </div>
+    </div>
 
 
   )}
