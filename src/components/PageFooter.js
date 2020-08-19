@@ -14,7 +14,7 @@ const PageFooter = (props) => {
             <span>Samadhi </span>
             <img src={officialLogo} width="30" height="30" class="" alt="" loading="lazy"/>
           </div>
-          <span className="p-3 h5 bd-highlight">{footer}</span>
+          <span className="p-3 h5 bd-highlight mx-3">{footer}</span>
         </div>
         <div className="row justify-content-around my-0 py-1 text-white">
           <small>Icon made by <a className ="text-white" href="https://www.flaticon.com/free-icon/lotus-flower_1751898?term=lotus%20flower&page=2&position=24" title="photo3idea_studio">photo3idea_studio</a> from <a className ="text-white" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></small>

@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useRef, createRef} from 'react';
-//import './Bonus.css';
 import playButton from '../assets/svg/playButton.svg';// Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 import pauseButton from '../assets/svg/pauseButton.svg';//Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 import rainLogo from '../assets/svg/rainLogo.svg'; //<div>Icons made by <a href="https://www.flaticon.com/free-icon/rain_2948216?term=rainy&page=1&position=3" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -60,7 +59,8 @@ const Bonus = () => {
     };
   }, [media]);
 
-  const style = {
+  const styleLoading = {
+    backgroundColor: isLoading ? "blue" : null,
     backgroundImage: isLoading ? `${loading}`  : null,
     backgroundPosition: isLoading ? "center top" : null,
     backgroundRepeat: isLoading ? "no-repeat": null,
@@ -84,7 +84,7 @@ const Bonus = () => {
   };
 
   const mm = Math.floor(secondsLeft / 1000 / 60);
-  const ss = (secondsLeft / 1000) % 60;
+  const ss = ("0"+ Math.floor((secondsLeft / 1000) % 60)).slice(-2);
 
   useEffect(() => {
     clearInterval(timer);
@@ -119,8 +119,21 @@ const Bonus = () => {
   return (
 
       <div className="bonus">{/*bonus-container*/}
-        <div className="container-fluid">
-            <video className="" loop ref ={videoElement} key ={media} style = {{position: "absolute",
+        <div className="container-fluid pl-0">
+            <div className="" style= {{
+              backgroundImage: isLoading ? `${loading}`  : null,
+              backgroundPosition: "top",
+              backgroundRepeat: "no-repeat",
+              height: "100%",
+              position: "absolute",
+              zIndex: "0",
+              top: "0",
+              width:"100%",
+              marginTop: "-190px"
+              }}>
+            </div>
+            <video className="" loop ref ={videoElement} key ={media} style = {{
+              position: "absolute",
               zIndex: "0",
               top: "0",
               width:"100%",
@@ -134,24 +147,40 @@ const Bonus = () => {
               <source src={`${mood}`} type="audio/mpeg" />
             </audio>
           <div className="row justify-content-around">
-            <div className="col offset-1">
-                <button className="btn btn-lg btn-outline-light my-5 py-3" onClick={setTimer(5)}>5 Minutes</button>
-                <br/>
-                <button className="btn btn-lg btn-outline-light my-5 py-3" onClick={setTimer(10)}>10 Minutes</button>
-                <br/>
-                <button className="btn btn-lg btn-outline-light my-5 py-3" onClick={setTimer(15)}>15 Minutes</button>
+            <div className="col offset-0 ml-4">
+                <div className="row justify-content-center my-5 ">
+                    <button className="btn btn-lg btn-outline-light my-5 py-3" style={{width: "130px"}} onClick={setTimer(5)}> 5 Minutes</button>
+                </div>
+                <div className="row justify-content-center my-5">
+                    <button className="btn btn-lg btn-outline-light my-5 py-3" style={{width: "130px"}} onClick={setTimer(10)}>10 Minutes</button>
+                </div>
+                <div className="row justify-content-center mt-0">
+                  <button className="btn btn-lg btn-outline-light mt-5 py-3" style={{width: "130px"}} onClick={setTimer(15)}>15 Minutes</button>
+                </div>
             </div>
-            <div className="col offset-1" style={{height:"120px"}}>
-                  {/*<audio className="song"/>
-                      <source src={soundRain} />
-                  </audio>*/}
-                  <button className="btn btn-outline-light h-100 my-5 rounded-circle" onClick={toggle}>{playing ? <img className=" h-100 rounded-circle" src={pauseButton} alt=""></img> : <img className=" h-100 rounded-circle" src={playButton} alt=""></img>}</button>
-                  <h3 className="text-white my-5">{mm}:{ss}</h3>
+            <div className="col offset-0 align-self-end">
+                  <div className="row justify-content-center" >
+                    <div className= "col-0 mb-4" style={{height:"115px"}}>
+                      <button className="btn btn-outline-light h-100 rounded-circle img-fluid py-4 px-4" onClick={toggle}>{playing ? <img className=" h-100 rounded-circle img-fluid " src={pauseButton} alt=""></img> : <img className=" h-100 rounded-circle img-fluid " src={playButton} alt=""></img>}</button>
+                    </div>
+                  </div>
+                  <div className="row justify-content-center mt-5">
+                    <div className= "col-0 offset-0">
+                      <h3 className="text-white h1 mb-0 mt-5">{mm}:{ss}</h3>
+                    </div>
+                  </div>
             </div>
-            <div className="col offset-1" style={{height:"120px"}} >
-              <button className="btn btn-outline-light h-100 my-5 rounded-circle" onClick={onClickRain}><img className=" h-100 rounded-circle" src={rainLogo} alt=""></img></button>
-              <br/>
-              <button className="btn btn-outline-light h-100 my-5 rounded-circle" onClick={onClickBeach}><img className=" h-100 rounded-circle" src={sunnyLogo} alt=""></img></button>
+            <div className="col offset-0 mt-5 align-self-center mr-1">
+              <div className="row justify-content-center">
+                <div className= "col-0 offset-0" style={{height:"115px"}}>
+                  <button className="btn btn-outline-light border border-white h-100 rounded-circle img-fluid py-4 px-4" onClick={onClickRain}><img className=" h-100  img-fluid" src={rainLogo} alt=""></img></button>
+                </div>
+              </div>
+              <div className="row justify-content-center mt-5">
+                <div className= "col-0 offset-0" style={{height:"115px"}}>
+                  <button className="btn btn-outline-light border border-white h-100 rounded-circle img-fluid py-4 px-4 mt-5" onClick={onClickBeach}><img className=" h-100  img-fluid" src={sunnyLogo} alt=""></img></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
