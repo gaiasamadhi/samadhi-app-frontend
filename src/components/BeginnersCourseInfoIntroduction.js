@@ -24,16 +24,14 @@ const BeginnersCourseInfoIntroduction = (props) => {
             {description}
           </div>
           <div className="fixed-top offset-8 my-0">
-            <Link className="btn btn-info btn-lg btn-block" to="/beginners-course-content" role="button" style={{marginTop: '200px'}}>Go to course</Link>
+            <Link className="btn btn-info btn-lg btn-block" to="/beginners-course-content" role="button" style={{marginTop: '235px'}}>Go to course</Link>
           </div>
         </div>
         <div className='row justify-content-start' >
-          <div className="col-2 offset-0 pl-5  mt-3 mb-5" style = {{marginLeft:"11.00%"}}>
+          <div className="col-2 offset-1 pl-5 pr-4  mt-3 mb-5" style = {{marginLeft:"10.00%"}} >
             <small>Last Update: {dayOfUpdate}-{monthOfUpdate}-{yearOfUpdate}</small>
-          {/*  <br/>
-          <small><em>{dayOfUpdate} {monthOfUpdate} {yearOfUpdate}</em></small>*/}
           </div>
-          <div className="col-2 px-5 mt-3 mb-5 " style = {{marginLeft:""}}>
+          <div className="col-2 offset-0 px-5 mt-3 mb-5 " style = {{marginLeft:""}}>
           <small> Suitable for: {suitableFor}</small>
           {/*<br/>
             <small><em>{suitableFor}</em></small>*/}

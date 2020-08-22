@@ -16,22 +16,20 @@ const HomeContent = (props) => {
         backgroundSize: "cover",
         height: "900px"}}
         >
-        <div className="row justify-content-start ml-5">
-          <span className=" bd-highlight h1 mt-5 text-white offset-1">{banner}</span>
+        <div className="row justify-content-start">
+          <div className="col offset-1 mt-5 px-5">
+            <span className=" bd-highlight h1 text-white">{banner}</span>
+          </div>
         </div>
-        <div className="row justify-content-around ml-4 pl-2" style = {{marginTop: "-8px"}} >
-          <div className="col h3 text-white offset-1" >
-            {/*<img src={officialLogo} width="15" height="15" className="" alt="" loading="lazy"/>*/}
+        <div className="row justify-content-around "  >
+          <div className="col h3 text-white offset-1 px-5" >
             <span className="">{description}</span>
-
-          </div>
-          <div className="col-2 ml-auto">
-            {/*<img src={logo} width="30" height="30" alt="" loading="lazy" style={{marginRight: "px"}}/>*/}
           </div>
         </div>
-        <div className="row justify-content-start ml-5" >
-          <Link className="btn my-4 text-white btn-lg font-weight-bold offset-1 bg bg-info" to="/level-selection" role="button" style ={{width: "300px", backgroundColor : "#ffb554", border: ""}} >GET STARTED</Link> {/*#8069c3*/}
-          {/*<button type="button" className="btn btn-info my-5 btn-lg" style={{marginLeft: "95px", marginTop:"5px", marginBottom:"5px"}}><Link className="text-white" to="/level-selection">Get started</Link></button>*/}
+        <div className="row justify-content-start" >
+          <div className="col offset-1 px-5">
+            <Link className=" btn my-4 text-white btn-lg font-weight-bold  bg bg-info" to="/level-selection" role="button"  >GET STARTED</Link>
+          </div>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const BrowseQuestions = (props) => {
     <div className="browse-questions">
       <div className="container-fluid bg-info min-vh-100" >
         <div className="row justify-content-center">
-          <div className="col-2 offset-0 my-5">
+          <div className="col-0 offset-0 my-5">
               <Link className="btn btn-primary btn-lg bg-white text-dark border-0 font-weight-bold" to={`${url}/ask`} role="button" >Ask a question</Link>
           </div>
         </div>
