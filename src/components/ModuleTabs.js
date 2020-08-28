@@ -15,7 +15,6 @@ const ModuleTabs = (props) => {
           <Link className= {"nav-link " + questionsAndAnswers} to="/beginners-course-content/browse-questions">Questions and answers</Link>
         </li>
       </ul>
-      {console.log(match.url - "/browse")}
     </div>
   )
 }

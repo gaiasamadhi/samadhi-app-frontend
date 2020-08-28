@@ -21,11 +21,6 @@ const BeginnersBrowseQuestions = () => {
       courseContent={'text-dark'}
       questionsAndAnswers={'active text-info h5'}/>
       <BrowseQuestionsContainer/>
-      {/*<Switch>
-        <Route path ={match.url + "/ask"} >
-          <BeginnersPostQuestion/>
-        </Route>
-      </Switch>*/}
     </div>
   )
 };

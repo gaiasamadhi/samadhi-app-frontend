@@ -12,8 +12,7 @@ const BeginnersCourseInfoIntroduction = (props) => {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       opacity: "1"}}
-
-      > {/*style = {{backgroundColor: "#b987f1", opacity: "0.9"}}*/}
+      >
         <div className='row justify-content-center'>
           <div className="col-10 h5 my-0 offset-1" style = {{paddingTop:"80px"}}>
             {banner}
@@ -33,8 +32,7 @@ const BeginnersCourseInfoIntroduction = (props) => {
           </div>
           <div className="col-2 offset-0 px-5 mt-3 mb-5 " style = {{marginLeft:""}}>
           <small> Suitable for: {suitableFor}</small>
-          {/*<br/>
-            <small><em>{suitableFor}</em></small>*/}
+
           </div>
         </div>
 

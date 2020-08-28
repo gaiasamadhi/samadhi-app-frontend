@@ -13,8 +13,7 @@ const SubmitAnswer = (props) => {
   const {id} =useParams()
   const answers = questionDescription['answers']
 
-  //for (var i = 0; i < questionDescription.answers.length; i++) {
-    //answer.push(questionDescription.answers[i].answer)}
+
     console.log(questionDescription.answers)
   return (
     <div className="submit-answer">
@@ -28,13 +27,7 @@ const SubmitAnswer = (props) => {
               <ul class="list-group list-group-flush">
               {questionDescription.answers && questionDescription.answers.map(text => <li class="list-group-item">{text.answer}</li>)}
               </ul>
-              <div className="card-body text-info">
-                {/*questionDescription.answers && questionDescription.answers.map(text => <h5 className="card-title">{text.answer}</h5>)*/}
-                {/*<h5 className="card-title">{answersList}</h5>*/}
-              </div>
             </div>
-            {/*JSON.stringify(answers)*/}
-            {/*questionDescription.answers || questionDescription.answers[0].answer*/}
             <textarea className ="w-100"
               placeholder ="write your answer here"
               value={newAnswerValue}

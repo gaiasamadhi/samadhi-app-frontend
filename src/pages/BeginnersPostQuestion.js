@@ -10,8 +10,6 @@ import {BrowserRouter as Router, Switch, Route, useRouteMatch} from 'react-route
 const BeginnersPostQuestion = () => {
   const match = useRouteMatch()
   return (
-    //<Switch>
-      //<Route path ={match.url + "/ask"}>
         <div className="beginners-course-post-question">
           <PageHeader
           title={'Meditation for beginners: a practical guide'}
@@ -22,8 +20,6 @@ const BeginnersPostQuestion = () => {
           questionsAndAnswers={'active text-info h5'}/>
         <PostQuestionContainer/>
         </div>
-      //</Route>
-    //</Switch>
   )
 
 }

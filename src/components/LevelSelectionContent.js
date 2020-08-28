@@ -35,7 +35,6 @@ const LevelSelectionContent = (props) => {
                 <span className="col-sm mx-5 mb-5">{description}</span>
               </div>
             </div>
-            {/*<button type="button" className="btn btn-info my-5 " ><Link className="text-white" to="beginners-course-info">Get started</Link></button>*/}
             <div className="row justify-content-center">
               <Link className="btn bg-info my-5 mx-5 btn-lg font-weight-bold text-white" to="/beginners-course-info" role="button" style={{marginLeft: "160px", backgroundColor: "#836c8b"}}>Get Started</Link>
             </div>
