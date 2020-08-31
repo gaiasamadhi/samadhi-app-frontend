@@ -1,3 +1,19 @@
+## Access
+
+For now you can access the application here: https://samadhi.netlify.app
+
+## Questions and Answers
+
+When searching for questions, you can either enter one or more keywords and then clink on the search button. Any macht will be shown afterwards. Otherwise just click on the search button and all available questions will be shown. Sometimes there is a little delay, so just wait for a couple of seconds to see the results of your query. This is a little patience exercise ;-).
+
+And if you decide to ask a question or to submit an answer, PLEASE be kind to the community and spread the love.
+
+## Easter egg 
+
+Just type **bonus** after the #/ and you will have a playground for setting your own meditation. Enjoy :-)
+
+## Framework
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
