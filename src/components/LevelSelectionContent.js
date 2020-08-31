@@ -26,28 +26,27 @@ const LevelSelectionContent = (props) => {
         </div>
         <div className="row justify-content-around mx-4">
 
-          <div className="col-sm">
-            <div className="bg" style ={{backgroundColor: "#0ECFB4"}}>
+          <div className="col-sm ">
+            <div className="" style ={{backgroundColor: "#ffffff" , boxShadow: "8px 8px 6px 0 rgba(0,0,0,0.160784)"}}>
               <div className="row justify-content-center">
-                <span className="h4 my-3">beginner</span>
+                <span className="h4 my-3">Beginner</span>
               </div>
               <div className="row justify-content-center">
-                <span className="col-sm mx-5 my-5">{description}</span>
+                <span className="col-sm mx-5 mb-5">{description}</span>
               </div>
             </div>
-            {/*<button type="button" className="btn btn-info my-5 " ><Link className="text-white" to="beginners-course-info">Get started</Link></button>*/}
             <div className="row justify-content-center">
-              <Link className="btn btn-info my-5 mx-5 btn-lg" to="/beginners-course-info" role="button" style={{marginLeft: "160px", backgroundColor: "#0ECFB4"}}>Get started</Link>
+              <Link className="btn bg-info my-5 mx-5 btn-lg font-weight-bold text-white" to="/beginners-course-info" role="button" style={{marginLeft: "160px", backgroundColor: "#836c8b"}}>Get Started</Link>
             </div>
           </div>
 
           <div className="col-sm">
-            <div className="bg-info">
+            <div className="text-secondary" style ={{ backgroundColor: "#ffffff", boxShadow: "8px 8px 6px 0 rgba(0,0,0,0.160784)"}}>
               <div className="row justify-content-center">
-                <span className="h4 my-3">intermediate</span>
+                <span className="h4 my-3">Intermediate</span>
               </div>
               <div className="row justify-content-center">
-                <span className="col-sm mx-5 my-5">{description}</span>
+                <span className="col-sm mx-5 mb-5">{description}</span>
               </div>
             </div>
             <div className="row justify-content-center">
@@ -56,12 +55,12 @@ const LevelSelectionContent = (props) => {
           </div>
 
           <div className="col-sm">
-            <div className="bg-info">
+            <div className="text-secondary" style ={{backgroundColor: "#ffffff", boxShadow: "8px 8px 6px 0 rgba(0,0,0,0.160784)"}}>
               <div className="row justify-content-center">
-                <span className="h4 my-3">advanced</span>
+                <span className="h4 my-3">Advanced</span>
               </div>
               <div className="row justify-content-center">
-                <span className="col-sm mx-5 my-5">{description}</span>
+                <span className="col-sm mx-5 mb-5">{description}</span>
               </div>
             </div>
             <div className="row justify-content-center">

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
+const officialLogo = "https://res.cloudinary.com/dr33x9zki/image/upload/v1596447437/lotus_11a4244c92.png"
 
 const HomeContent = (props) => {
   const {banner, description, backgroundImage} = props;
@@ -15,20 +16,20 @@ const HomeContent = (props) => {
         backgroundSize: "cover",
         height: "900px"}}
         >
-        <div className="row justify-content-start ml-5">
-          <span className="p-3 bd-highlight h1 mt-5 text-white">{banner}</span>
+        <div className="row justify-content-start">
+          <div className="col offset-1 mt-5 px-5">
+            <span className=" bd-highlight h1 text-white">{banner}</span>
+          </div>
         </div>
-        <div className="row justify-content-around ml-5">
-          <div className="col ml-auto h3 text-white">
+        <div className="row justify-content-around "  >
+          <div className="col h3 text-white offset-1 px-5" >
             <span className="">{description}</span>
           </div>
-          <div className="col-2 ml-auto">
-            {/*<img src={logo} width="30" height="30" alt="" loading="lazy" style={{marginRight: "px"}}/>*/}
-          </div>
         </div>
-        <div className="row justify-content-start" style={{marginLeft: "130px"}}>
-          <Link class="btn btn-info my-5 btn-lg" to="/level-selection" role="button">Get started</Link>
-          {/*<button type="button" className="btn btn-info my-5 btn-lg" style={{marginLeft: "95px", marginTop:"5px", marginBottom:"5px"}}><Link className="text-white" to="/level-selection">Get started</Link></button>*/}
+        <div className="row justify-content-start" >
+          <div className="col offset-1 px-5">
+            <Link className=" btn my-4 text-white btn-lg font-weight-bold  bg bg-info" to="/level-selection" role="button"  >GET STARTED</Link>
+          </div>
         </div>
       </div>
     </div>

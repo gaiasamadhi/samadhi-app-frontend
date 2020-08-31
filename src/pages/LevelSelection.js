@@ -13,8 +13,7 @@ const LevelSelection = () => {
           <LevelSelectionContent
             banner={'Please choose one of the following paths'}
             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-            backgroundImage = {"https://res.cloudinary.com/dr33x9zki/image/upload/v1596396986/Home_Content_Background_00_d5bdb382dd.jpg"}/>
-          {/*https://res.cloudinary.com/dr33x9zki/image/upload/v1596458186/lotus_Background_679344e864.jpg*/}
+            backgroundImage = {"https://res.cloudinary.com/dr33x9zki/image/upload/v1596661746/sunset_vgmdx3.jpg"}/>
           <PageFooter
             footer={'GNU General Public License version 2'}/>
         </div>

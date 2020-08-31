@@ -9,10 +9,10 @@ const BeginnersCourseInfoCourseContent = (props) => {
       <div className="container-fluid bg-info">
         <div className={`row justify-content-${justifyContent}`}>
           <div className={`col-6 offset-${offsetLevel} my-5`} style = {{paddingLeft: "0px"}}>
-            <table className ="table table-bordered bg-light text-info table-hover">
+            <table className ="table border-0 bg-light text-info table-hover">
               <thead>
                 <tr>
-                  <th colspan="2" className="px-5">
+                  <th colspan="2" className="px-1">
                     Course content
                   </th>
                 </tr>

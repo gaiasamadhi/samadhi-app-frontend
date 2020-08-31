@@ -18,14 +18,9 @@ const BeginnersBrowseQuestions = () => {
       />
       <MediaPlayer/>
       <ModuleTabs
-      courseContent={''}
-      questionsAndAnswers={'active'}/>
+      courseContent={'text-dark'}
+      questionsAndAnswers={'active text-info h5'}/>
       <BrowseQuestionsContainer/>
-      {/*<Switch>
-        <Route path ={match.url + "/ask"} >
-          <BeginnersPostQuestion/>
-        </Route>
-      </Switch>*/}
     </div>
   )
 };

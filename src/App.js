@@ -6,6 +6,7 @@ import BeginnersCourseContent from './pages/BeginnersCourseContent';
 import BeginnersBrowseQuestions from './pages/BeginnersBrowseQuestions';
 import BeginnersSubmitAnswer from './pages/BeginnersSubmitAnswer';
 import BeginnersPostQuestion from './pages/BeginnersPostQuestion';
+import BonusPage from './pages/BonusPage';
 import {HashRouter as Router, Switch, Route, useRouteMatch} from 'react-router-dom';
 
 import './App.css';
@@ -27,7 +28,7 @@ function App() {
         //<Route path='/beginners-course-content/:browse/:ask'><BeginnersPostQuestion/></Route>
         */}
         <Route path='/beginners-course-content'><BeginnersCourseContent/></Route>
-
+        <Route path='/bonus'><BonusPage/></Route>
       </Switch>
     </Router>
   );
