@@ -12,7 +12,7 @@ And if you decide to ask a question or to submit an answer, PLEASE be kind to th
 
 Just type **bonus** after the #/ and you will have a playground for setting your own meditation. Enjoy :-)
 
-BTW, this specific section is a reimplementation of https://github.com/developedbyed/meditation-app
+By the way, this specific section is a reimplementation of https://github.com/developedbyed/meditation-app
 
 ## Framework
 
